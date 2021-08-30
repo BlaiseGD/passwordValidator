@@ -30,7 +30,7 @@ if(password.length() > 999){
   }
   if(numbers != true){
     cout << "The password is not valid! It doesn't contain any numbers!" << endl << endl;
-    goto invalid;
+    goto invalid; //this goto statement is at end of function to shorten runtime
   }
   //this for loop searches for special characters
   for(char i = 33; i != '~'; i++){
